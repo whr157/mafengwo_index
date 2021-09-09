@@ -1,0 +1,378 @@
+body,ul,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+/*==============1.头部导航.nav=====================*/
+.nav{
+    width: 100%;
+    height: 58px;
+    min-width: 1400px;
+}
+.nav .head-logo{
+    width: 120px;
+    height: 34px;
+    position: relative;
+    top: 12px;
+    float: left;
+    background-image: url("../images/mafengwo.jpg");
+    background-size: cover;
+    margin-left: 32px;
+}
+/*导航*/
+.nav .head-nav{
+    width: 726px;
+    height: 100%;
+    float: left;
+    margin-left: 30px;
+    min-width: 750px;
+}
+.head-nav ul{
+    height: 100%;
+    list-style: none;   /*去除小黑点*/
+}
+.head-nav ul li{
+    float: left;    /*每个li不换行*/
+    width: 80px;
+    height: 100%;
+}
+/*设置 导航每个菜单的超链接a 宽度高度
+    a：本身是行内元素
+*/
+.head-nav ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: darkslategrey;
+    text-align: center; /*水平居中*/
+    line-height: 58px;    /*垂直居中*/
+    text-decoration: none;  /*去除下划线*/
+    font-size: 14px;
+}
+/*导航第一个样式*/
+.head-nav ul li:first-child{
+    background-color: #ff9d00;
+    color: white;
+}
+.head-nav ul li a.ticket-che:after{
+    display: block; /*块级元素*/
+    width: 28px;
+    height: 18px;
+    background-color: red;
+    content: '特价';
+    text-align: center; /*文本水平剧中*/
+    line-height: 40px;  /*文本垂直剧中，值与height一样*/
+    font-size: 8px;
+    border-radius: 4px;    /*圆角*/
+    position: relative;
+    left: 70px;
+    top: -50px;
+    color: white;
+    line-height: 20px;
+}
+.head-nav ul li a.first-item{
+    color: white;
+
+}
+.head-nav ul li a.first-item:hover{
+    background-color: #ff9d00;
+    color: white;
+    border: none;
+}
+.head-nav ul li a:hover{
+    color: #ff9d00;
+    border-bottom: 3px solid #ff9d00;
+}
+
+/*登录区域*/
+.nav .head-login{
+    width: 184px;
+    height: 100%;
+    float: right;
+}
+.head-login ul{
+    height: 100%;
+    list-style: none;
+}
+.head-login ul li{
+    float: left;
+    width: 28px;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 58px;
+}
+.head-login ul li a{
+    text-decoration: none;
+    color: #ff9d00;
+}
+.head-login ul li a:hover{
+    text-decoration: underline;
+}
+/*==============2.横幅banner=====================*/
+.banner{
+    width: 100%;
+    height: 450px;
+    background-color: slateblue;
+}
+.banner .show-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner .show-img img{
+    width: 100%;
+    height: 100%;
+}
+/*导航小图片*/
+.banner .show-nav{
+    width: 110px;
+    height: 340px;
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    list-style: none;
+}
+.banner .show-nav li{
+    width: 100%;
+    height: 62px;
+    margin-bottom: 5px;
+}
+.banner .show-nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*小导航图片大小*/
+.banner .show-nav   a img{
+    width: 100%;
+    height: 100%;
+}
+.banner .show-nav li a:hover{
+    border: 2px solid #ff9d00;
+}
+
+/*搜索栏*/
+.banner .search-area{
+    width: 540px;
+    height: 90px;
+    position: absolute;
+    border-radius: 4px;
+    left: 35%;
+    top: 400px;
+}
+.search-form{
+    width: 80%;
+    height: 36px;
+    /* background-color: springgreen;*/
+    margin: 0 auto;
+    position: relative;
+    top:20px;
+
+}
+
+/*单行文本框*/
+.search-form .keyword{
+    width: 300px;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    outline: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.search-form .search-btn{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-color: #ff9d00;
+    background-image: url("../images/search.svg") ;
+    border: none;
+    border-radius: 5px;
+    float: left;
+}
+
+/*==============3.主要内容main=====================*/
+.main{
+    width: 75%;
+
+    margin: 0 auto; /*div在父容器中剧中*/
+
+    /* padding-bottom: 50px当前div底部 与 内部的元素 的间距 */
+}
+/*左侧推广*/
+.main .aside-ad{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.aside-ad ul{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    list-style: none;
+}
+.aside-ad ul li{
+    width: 100%;
+    height: 246px;
+    margin-bottom: 10px;
+}
+.aside-ad .ad-item h2{
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    color: darkslategrey;
+    line-height: 35px;
+    font-weight: normal;
+}
+/*左侧图片*/
+.aside-ad .ad-img{
+    display: inline-block;
+    width: 100%;
+    height: 123px;
+}
+.aside-ad .ad-img img{
+    width: 100%;
+    height: 100%;
+}
+.ad-item a{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    color: darkslategrey;
+    text-decoration: none;
+    line-height: 30px;
+}
+.ad-item p{
+    width: 100%;
+    height: 90px;
+    margin-top: 0;
+    font-size: 14px;
+    color: darkslategrey;
+}
+.ad-item a h3:hover{
+    color: #ff9d00;
+    text-decoration: underline;
+}
+/*右边的游记*/
+.main .right-note-list{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+.main .right-note-list .note-nav{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    border-bottom: 1px solid darkgray;
+}
+.main .right-note-list .note-nav ul{
+    width: 290px;
+    height: 100%;
+    list-style: none;
+    float: left;
+}
+.main .right-note-list .note-nav ul li{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+.note-nav ul li a{
+    font-size: 20px;
+    color: darkslategrey;
+    text-decoration: none;
+}
+.note-nav ul li .note-nav-left:hover{
+    color: #ff9d00;
+}
+.main .right-note-list .note-nav .write{
+    width: 140px;
+    height: 100%;
+    float: right;
+}
+.write a{
+    display: inline-block;
+    width: 130px;
+    height: 44px;
+    background-color: #ff9d00;
+    border-radius: 6px;
+    margin-left: 5px;
+    margin-top: 3px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+}
+#write-note{
+    color: white;
+}
+.write a:hover{
+    background-color: #f89600;
+}
+.note-main{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 5px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.note-main:hover{
+    background-color: lightgray;
+}
+.note-main ul .note-main-text:hover{
+    color: #ff9d00;
+}
+.note-main .note-main-img{
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+}
+.note-main .note-main-img img{
+    width: 100%;
+    height: 100%;
+}
+.note-main ul{
+    width: 500px;
+    height: 100%;
+    float: left;
+    list-style: none;
+}
+.note-main ul .note-main-text{
+    display: inline-block;
+    width: 100%;
+    height: 26px;
+    font-size: 18px;
+    text-decoration: none;
+    color: darkslategrey;
+}
+.note-main ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    text-decoration: none;
+    color: darkslategrey;
+}
+.note-main .note-main-good{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    float: right;
+    margin-right: 30px;
+}
+
+/*==============4.底部footer=====================*/
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
+}
